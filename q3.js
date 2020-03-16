@@ -45,11 +45,12 @@ div.appendChild(ol);
 var li = document.createElement('li');
 ol.appendChild(li);
 
-// for(var j=0; j<ToDo.all.length ; j++ ){
+for(var j=0; j<ToDo.all.length ; j++ ){
 
-li.textContent = `${this.whatToDo} on ${this.date}`
+li.textContent = `${ToDo.all[j].whatToDo} on ${ToDo.all[j].date}`
 
-// }
+
+}
 
 }
 

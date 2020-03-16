@@ -10,6 +10,11 @@ form {
     background-color: #dae4ff;
     display: inline-block;
     margin-left: 10%;
+    padding:50px;
+    
+}
+fieldset{
+    border: none;
 
 }
 
@@ -24,6 +29,7 @@ h1 {
     margin-right: 600px;
 }
 
-#dt{
-    color:6d8adbc7 ;
+#submit{
+    margin-left: 220px;
 }
+
