@@ -1,17 +1,20 @@
 'use strict'
 
-function greaterThan(array,number){
+var array = [4,3,8,7];
+var number = 5;
+function greaterThan(array, number) {
+     var j = 0;
 
-array = [];
-number= number;
-if ((array[0] || array[1] || array[2] || array[3]) >= number ){
-return 1;
+     for (var i = 0; i < array.length; i++) {
 
-}
-else{
-     return 0 ;
-}
+          if (array[i] > number) {
+
+          j++
+          }
+
+     }
+    return j ; 
 }
 
-greaterThan([1,8,3,9],6);
-console.log(greaterThan([1,8,3,9],6));
+
+console.log(greaterThan(array, number));
