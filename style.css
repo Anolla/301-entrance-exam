@@ -1,3 +1,29 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+body{
+    background-color:#eee;
+}
+
+form {
+    background-color: #dae4ff;
+    display: inline-block;
+    margin-left: 10%;
+
+}
+
+h1 {
+    background-color: #6d8adbc7;
+    color: white;
+    text-align: center;
+}
+
+#list{
+    float: right;
+    margin-right: 600px;
+}
+
+#dt{
+    color:6d8adbc7 ;
+}
