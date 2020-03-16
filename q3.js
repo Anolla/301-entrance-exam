@@ -32,6 +32,7 @@ var when =event.target.dt.value;
 var newTask = new ToDo (task,when);
 // console.log(newTask); 
 newTask.renderList();
+localStore();
 
 
 }
@@ -55,3 +56,17 @@ li.textContent = `${ToDo.all[j].whatToDo} on ${ToDo.all[j].date}`
 }
 
 
+function localStore(){
+var string =JSON.stringify(Todo.all);
+localStorage.setItem('newItem',string);
+
+}
+
+function get(){
+
+    var string=localStorage.getItem('newItem');
+    ToDo.all=JSON.parse(string);
+
+}
+
+get();
